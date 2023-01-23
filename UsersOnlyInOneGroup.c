@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
 	char c;
 	int count = 0;
 	char* outname = "out.txt";
-	out = fopen(outname, "r");
+	out = fopen_s(outname, "r");
 	if(!out)
 		printf("file error\n");
 	system("getent passwd > out.txt");
